@@ -1,0 +1,208 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #3498db;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+}
+#about {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.about-text {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.about-image {
+    border-radius: 10px;
+    width: 300px; /* Adjust based on your image size */
+    height: auto;
+}
+
+#contact {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-method {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.contact-method i {
+    font-size: 40px;
+    color: #3498db;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+form button {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #d35400;
+}
+/* تحسين التصميم على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* زيادة عرض الحاوية على الشاشات الصغيرة */
+    }
+
+    nav ul li {
+        display: block; /* عرض القوائم عموديًا */
+        margin: 10px 0; /* إضافة مسافة بين العناصر */
+    }
+
+    .service-cards {
+        flex-direction: column; /* عرض بطاقات الخدمات عموديًا */
+        align-items: center; /* محاذاة العناصر في المنتصف */
+    }
+
+    .card {
+        width: 80%; /* تقليل عرض البطاقات */
+        margin-bottom: 20px; /* إضافة مسافة بين البطاقات */
+    }
+
+    .about-content {
+        flex-direction: column; /* عرض المحتوى بشكل عمودي */
+        align-items: center; /* محاذاة العناصر في المنتصف */
+    }
+
+    .about-text {
+        margin-right: 0; /* إعادة تعيين المسافة */
+        margin-bottom: 20px; /* إضافة مسافة بين النص والصورة */
+    }
+
+    .about-image {
+        width: 100%; /* جعل الصورة تأخذ عرض كامل الحاوية */
+        max-width: 300px; /* تحديد الحد الأقصى للعرض */
+    }
+
+    .contact-info {
+        flex-direction: column; /* عرض معلومات الاتصال عموديًا */
+    }
+
+    .contact-method {
+        margin: 10px 0; /* إضافة مسافة بين العناصر */
+    }
+
+    form {
+        width: 90%; /* جعل النموذج يأخذ عرض أكبر */
+    }
+}

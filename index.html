@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي المتقدم</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TecnoServiesPro</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>مرحبا بكم في موقع المتقدم</h2>
+            <p>نحن نقدم أفضل الحلول في عالم البرمجة</p>
+            <a href="#services" class="btn">استكشف خدماتنا</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>خدماتنا</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>تطوير المواقع</h3>
+                <p>نقوم بتطوير مواقع متكاملة وسهلة الاستخدام.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-search"></i>
+                <h3>تحسين محركات البحث</h3>
+                <p>نساعدك في زيادة ظهورك في محركات البحث.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>تصميم واجهة المستخدم</h3>
+                <p>نقدم تصميمات جذابة واحترافية.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+    <h2>من نحن</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>نحن فريق من المحترفين نعمل بجد لتقديم أفضل الحلول.</p>
+            <p>نهدف إلى تزويد عملائنا بخدمات مبتكرة وموثوقة تساعدهم على تحقيق أهدافهم.</p>
+        </div>
+        <img src="C:\Users\amroa\Desktop\صور-برمجة12.jpg" alt="فريق العمل" class="about-image">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>تواصل معنا</h2>
+    <div class="contact-info">
+        <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <p>الهاتف: 0792385919</p>
+        </div>
+        <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <p>البريد الإلكتروني: mustafaabojmail577@gmail.com</p>
+        </div>
+    </div>
+    <form action="send_email.php" method="POST">
+    <label for="name">الاسم:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">الرسالة:</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit">إرسال</button>
+</form>
+
+</section>
+
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
